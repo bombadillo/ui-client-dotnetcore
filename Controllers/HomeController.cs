@@ -20,11 +20,11 @@ namespace ui_client_dotnetcore.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var ui = await _iUIRetrieverService.RetrieveByToken("2bca1032-4700-45db-975c-30dae65de7ae");
+            var tacos = await _iUIRetrieverService.RetrieveByToken("2bca1032-4700-45db-975c-30dae65de7ae");
 
             var viewModel = new ViewModel 
             {
-                UI = ui
+                Tacos = tacos
             };
 
             return View(viewModel);
