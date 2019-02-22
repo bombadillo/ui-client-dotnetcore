@@ -8,9 +8,21 @@
 <taco-header></taco-header>
 
 <!-- Flat HTML -->
-@Html.Raw(Model.Tacos)      
+@Html.Raw(Model.Tacos)     
+
+<!-- React component -->
+<my-component></my-component>
+
+<!-- Angular component -->
+<taco-stats></taco-stats>
 
 <script>
-  // Inject JS for web component
+  // Inject JS for vanilla JS web component
   @Html.Raw(Model.Header)
+
+  // Inject JS for React web component
+  @Html.Raw(Model.Deals)
+
+  // Inject JS for Angular web component
+  @Html.Raw(Model.Stats)
 </script>

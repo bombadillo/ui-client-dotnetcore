@@ -6,5 +6,7 @@ namespace ui_client_dotnetcore.Models
     {
         public string Header { get; set; }
         public string Tacos { get; set; }
+        public string Deals { get; set; }
+        public string Stats { get;set; }
     }
 }
