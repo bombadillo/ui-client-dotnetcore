@@ -4,4 +4,13 @@
     ViewData["Title"] = "Home Page";
 }
 
+<!-- Web Component -->
+<taco-header></taco-header>
+
+<!-- Flat HTML -->
 @Html.Raw(Model.Tacos)      
+
+<script>
+  // Inject JS for web component
+  @Html.Raw(Model.Header)
+</script>
